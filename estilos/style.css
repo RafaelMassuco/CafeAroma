@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "Super Dessert";
-    src: url(font/SuperDessert.ttf);
+    font-family: "Super-Dessert";
+    src: url(font/Super-Dessert.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: "Batuphat Script";
-    src: url(font/BatuphatScript.otf);
+    font-family: "Batuphat-Script";
+    src: url(font/Batuphat-Script.otf) format('opentype');
 }
 
 @font-face {
     font-family: "Roboto-Medium";
-    src: url(font/Roboto-Medium.ttf);
+    src: url(font/Roboto-Medium.ttf) format('truetype');
 }
 
 :root {
@@ -20,6 +20,9 @@
     --rosa: #ff167a;
     --rosaescuro: #dd0965;
     --preto: #191919;
+    --fonteprincipal: "Super-Dessert", Verdana, Geneva, Tahoma, sans-serif;
+    --fontsecundaria: "Roboto-Medium", Geneva, Tahoma, sans-serif;
+    --fonteauxiliar: "Batuphat-Script", Verdana, sans-serif;
 }
 
 * {
@@ -36,7 +39,7 @@ html {
 
 body {
     background-color: var(--branco);
-    font-family: Roboto-Medium, Arial, sans-serif;
+    font-family: var(--fontsecundaria);
 }
 
 .espaco-home {
@@ -80,7 +83,7 @@ nav ul {
 }
 
 nav li>a {
-    font-family: Super Dessert, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonteprincipal);
     color: var(--rosa);
 }
 
@@ -110,7 +113,7 @@ nav li>a:hover {
 }
 
 .home-texto h1 {
-    font-family: Super Dessert, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonteprincipal);
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 0.4em;
@@ -131,7 +134,7 @@ nav li>a:hover {
 .produto-texto p,
 .contato label {
     font-size: 1em;
-    font-family: Roboto-Medium, Geneva, Tahoma, sans-serif;
+    font-family: var(--fontsecundaria);
     font-weight: bold;
 }
 
@@ -149,7 +152,7 @@ nav li>a:hover {
 .sobre-titulo,
 .contato-titulo {
     margin: 2em 0;
-    font-family: Super Dessert, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonteprincipal);
     font-size: 1em;
 }
 
@@ -178,13 +181,13 @@ nav li>a:hover {
 
 .produto-texto h3 {
     text-align: center;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--fontsecundaria);
     font-size: 1.3em;
     margin: 8px 0;
 }
 
 .produto-titulo h3 {
-    font-family: "Batuphat Script";
+    font-family: var(--fonteauxiliar);
     font-size: 1.4em;
     text-wrap: nowrap;
 }
@@ -251,7 +254,7 @@ nav li>a:hover {
     border: none;
     box-shadow: 4px 4px 6px 1px var(--preto);
     padding: 0.6em;
-    font-family: Roboto-Medium, Geneva, Tahoma, sans-serif;
+    font-family: var(--fontsecundaria);
     font-weight: bold;
 }
 
@@ -270,7 +273,7 @@ nav li>a:hover {
 .submit-button button {
     width: 100%;
     height: 40px;
-    font-family: "Super Dessert";
+    font-family: var(--fonteprincipal);
     background-color: var(--preto);
     color: #ff167a;
     box-shadow: 4px 4px 6px 1px var(--preto);
